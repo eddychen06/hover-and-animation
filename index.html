@@ -6,49 +6,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <title>Mens Running Shoes</title>
+    <title>Hover Effects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body onload="loading()">
     <div id="loader"></div>
-    <div id="loader-text">Loading in 10 seconds</div>
     <div id="content">
+        <h1>Hover Effects</h1>
         <div class="container">
             <div class="card">
                 <h2 id="fade">Hover Text</h2>
+                <p>This text disappears.</p>
             </div>
             <div class="card">
                 <h2 id="black-bg">Hover Text</h2>
-
+                <p>This text turns white and the background turns black.</p>
             </div>
             <div class="card">
                 <h2 id="spin">Hover Text</h2>
-
+                <p>This text spins in circles.</p>
             </div>
             <div class="card">
-                <h2>Hover Text</h2>
-
+                <h2 id="shrink">Hover Text</h2>
+                <p>This text shrinks.</p>
             </div>
             <div class="card">
-                <h2>Hover Text</h2>
-
+                <h2 id="grow">Hover Text</h2>
+                <p>This text grows.</p>
             </div>
             <div class="card">
-                <h2>Hover Text</h2>
-
+                <h2 id="wobble">Hover Text</h2>
+                <p>This text wobbles.</p>
             </div>
         </div>
     </div>
     <script>
-        var myVar;
-        
+
         function loading() {
-          myVar = setTimeout(showPage, 100);
+          return setTimeout(showPage, 3000);
         }
         
         function showPage() {
           document.getElementById("loader").style.display = "none";
-          document.getElementById("loader-text").style.display = "none";
           document.getElementById("content").style.display = "block";
         }
     </script>
